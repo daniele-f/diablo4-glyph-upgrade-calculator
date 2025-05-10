@@ -1,5 +1,7 @@
+import org.jetbrains.kotlin.gradle.plugin.KotlinJsCompilerType
+
 plugins {
-    kotlin("jvm") version "2.1.20"
+    kotlin("js") version "2.1.20"
 }
 
 group = "com.github.daniele_f"
@@ -9,13 +11,10 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnitPlatform()
-}
 kotlin {
-    jvmToolchain(21)
+    js(KotlinJsCompilerType.IR) {
+        browser {
+            binaries.executable()
+        }
+    }
 }

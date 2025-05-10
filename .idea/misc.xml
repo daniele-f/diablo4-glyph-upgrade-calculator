@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AIAssistantCustomInstructionsStorage">
-    <option name="instructions">
-      <map>
-        <entry key="AIAssistant.VCS.GenerateCommitMessage">
-          <value>
-            <AIAssistantStoredInstruction>
-              <option name="actionId" value="AIAssistant.VCS.GenerateCommitMessage" />
-              <option name="content" value="Write a concise Git commit message starting with [fix], [feature], or [refactor], followed by a short imperative sentence. Avoid overly verbose descriptions or unnecessary details. Keep it under 50 characters. Do not use quotes" />
-            </AIAssistantStoredInstruction>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
-  <component name="KotlinCodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
   <component name="KotlinNotebookOptionsProvider">
     <option name="jdkName" value="corretto-17" />
-  </component>
-  <component name="OptimizeOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
