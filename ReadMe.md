@@ -1,0 +1,1 @@
+https://daniele-f.github.io/diablo4-glyph-upgrade-calculator/
