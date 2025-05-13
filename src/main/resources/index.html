@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <title>Diablo 4 Glyph Upgrade Calculator</title>
@@ -14,7 +14,7 @@
     </div>
 
     <div class="box">
-        <h2>Minimum Pit Level Calculator</h2>
+        <h2>Minimum Pit Level</h2>
         <label for="glyphLevel">Glyph Level:</label>
         <input type="number" id="glyphLevel" min="1" value="1">
 
@@ -29,20 +29,31 @@
             No-death bonus
         </label>
 
-        <label>
-            <input type="checkbox" id="calcPlus20">
-            +20 Pit level
-        </label>
-
-        <button id="applyFinalLevel">Apply Final Glyph Level</button>
+        <span>
+            <label for="pitLevelBonus">Set Pit Level Bonus:</label>
+            <select id="pitLevelBonus">
+                <option value="10" selected>+10 (no bonus)</option>
+                <option value="20">+20 (+1)</option>
+                <option value="30">+30 (+2)</option>
+                <option value="40">+40 (+3)</option>
+                <option value="50">+50 (+4)</option>
+                <option value="60">+60 (+5)</option>
+                <option value="70">+70 (+6)</option>
+                <option value="80">+80 (+7)</option>
+                <option value="90">+90 (+8)</option>
+                <option value="100">+100 (+9)</option>
+            </select>
+        </span>
 
         <div class="result" id="output">
             Enter a glyph level to see results.
         </div>
+
+        <button id="applyFinalLevel">Set Glyph level to <span id="resultGlyphLevel"></span></button>
     </div>
 
     <div class="box">
-        <h2>Artificer's Stone Cost Calculator</h2>
+        <h2>Artificer's Stone Cost</h2>
         <label for="currentLevel">Current Glyph Level:</label>
         <input type="number" id="currentLevel" min="1" value="1">
 
@@ -58,11 +69,6 @@
         <label>
             <input type="checkbox" id="stoneNoDeath">
             No-death bonus
-        </label>
-
-        <label>
-            <input type="checkbox" id="pitPlus20">
-            +20 Pit level
         </label>
 
         <div class="result" id="stoneOutput">
