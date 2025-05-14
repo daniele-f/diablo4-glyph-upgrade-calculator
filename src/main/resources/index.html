@@ -5,6 +5,7 @@
     <title>Diablo 4 Glyph Upgrade Calculator</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <main>
@@ -29,8 +30,19 @@
             No-death bonus
         </label>
 
+        <label>
+            <input type="checkbox" id="urnOfGlyphsBonus">
+            <span class="tooltip">[Urn of Glyphs] 100% bonus
+                <i class="fa-regular fa-circle-question"></i>
+                <span class="tooltiptext">
+                    The Season Blessing grants
+                    +<span class="blue-highlight">25</span>/<span class="blue-highlight">50</span>/<span class="blue-highlight">75</span>/<span class="blue-highlight">100</span>% extra upgrade attempt
+            </span>
+        </span>
+        </label>
+
         <span>
-            <label for="pitLevelBonus">Set Pit Level Bonus:</label>
+            <label for="pitLevelBonus">Pit Level bonus:</label>
             <select id="pitLevelBonus">
                 <option value="10" selected>+10 (no bonus)</option>
                 <option value="20">+20 (+1)</option>

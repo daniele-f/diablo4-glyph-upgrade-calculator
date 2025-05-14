@@ -12,6 +12,7 @@ fun main() {
     (document.getElementById("adjustGlyphLevelSub") as? HTMLButtonElement)?.addEventListener("click", { adjustGlyphLevel(-1) })
     (document.getElementById("resetGlyphLevel") as? HTMLButtonElement)?.addEventListener("click", { resetGlyphLevel() })
     (document.getElementById("noDeathBonus") as? HTMLInputElement)?.addEventListener("change", { updateResults() })
+    (document.getElementById("urnOfGlyphsBonus") as? HTMLInputElement)?.addEventListener("change", { updateResults() })
     (document.getElementById("pitLevelBonus") as? HTMLSelectElement)?.addEventListener("change", { updateResults() })
     (document.getElementById("applyFinalLevel") as? HTMLButtonElement)?.addEventListener("click", { applyFinalLevel() })
 

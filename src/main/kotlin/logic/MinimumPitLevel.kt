@@ -10,14 +10,19 @@ private var lastFinalGlyphLevel = 1
 fun updateResults() {
     val glyphInput = document.getElementById("glyphLevel") as? HTMLInputElement
     val noDeathBonus = document.getElementById("noDeathBonus") as? HTMLInputElement
+    val urnOfGlyphsBonus = document.getElementById("urnOfGlyphsBonus") as? HTMLInputElement
     val pitLevelBonusInput = document.getElementById("pitLevelBonus") as? HTMLSelectElement
     val output = document.getElementById("output")
     val result = document.getElementById("resultGlyphLevel")
 
     val glyphLevel = glyphInput?.value?.toIntOrNull() ?: 1
-    val attempts = if (noDeathBonus?.checked == true) 4 else 3
+//    val attempts = if (noDeathBonus?.checked == true) 4 else 3
     val pitLevelBonus = pitLevelBonusInput?.value?.toIntOrNull() ?: 10
     val pitLevel = glyphLevel + pitLevelBonus
+
+    var attempts = 3
+    if (noDeathBonus?.checked == true) attempts++
+    if (urnOfGlyphsBonus?.checked == true) attempts++
 
 
     if (glyphLevel < 1) {
